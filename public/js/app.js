@@ -133,8 +133,9 @@ function getMore() {
 }
 
 function getTweets(url) {
+  var cards = "";
   $.getJSON(url, function(data) {
-    var cards = listOfCards(data);
+    cards = listOfCards(data);
     $('#jscroll').append(cards);
     getMore();
     $(".loading").hide("fast");
@@ -276,7 +277,7 @@ function onPlaceChanged() {
 
 }
 function search2(lat, lng) {
-  $("#jscroll .card, #jscroll .btn-next").show().remove();
+  $("#jscroll").html("");
   var country = document.getElementById('country').value;
   var link = "./api?lat="+ lat +"&lon="+ lng +"&lang="+ countries[country].lang;
   getAddress(lat, lng);
