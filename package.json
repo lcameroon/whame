@@ -1,0 +1,29 @@
+{
+  "name": "whame",
+  "version": "0.0.1",
+  "description": "What's Happening Around ME App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lcameroon/whame.git"
+  },
+  "author": "Luis Cameroon",
+  "license": "MIT",
+  "dependencies": {
+    "restify": "2.4.x",
+    "fs": "0.0.x",
+    "twit": "1.1.x"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "bugs": {
+    "url": "https://github.com/lcameroon/whame/issues"
+  },
+  "homepage": "https://github.com/lcameroon/whame",
+  "devDependencies": {}
+}
